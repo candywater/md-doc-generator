@@ -1,0 +1,10 @@
+{
+  "name": "md-doc-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "candywater",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^2.0.0"
+  }
+}
