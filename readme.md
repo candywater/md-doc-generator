@@ -5,13 +5,15 @@ from .md & config file to generate a static blog,
 like jekyll but do not generate static html, generate .json instead.
 and use fetch() to get page info from .json, get content info from .md.
 
-or, for SEO porpose,
-just like jekyll.
-
 ### advantage
 
 Much more smaller size than jekyll.
 Much more less time to generate content.(Json Mode Only: only generate pagination info .json)
+
+### disadvantage
+
+Not good for SEO.  
+Search engine bot may cannot recognize your blog content.
 
 ### todo list
 
@@ -27,25 +29,30 @@ Much more less time to generate content.(Json Mode Only: only generate paginatio
 
 
 ### User Write Blog Flow
+
 ```mermaid
 graph TD;
-  user[user brain]--write-->md[markdown file];
+  user[your idea etc.]--write-->md[markdown file];
 ```
 
 ### Ggenerator Flow (Cli Automaton)
 
-#### JSON MODE
 ```mermaid
 graph TD;
-  md[markdown file]--config-->json[json file: pagination]
+  md[markdown file] & config[yaml file]-->json[json file: for pagination];
 ```
 
 ### Browser Access Flow
 
-#### JSON MODE
-
+#### pagination
 ```mermaid
 graph TD;
-    template--fetch post-->html;
+  temp(template html) & json[json file]-->html;
+```
+
+#### post
+```mermaid
+graph TD;
+  temp(template html) & md[markdown file]-->html;
 ```
 
