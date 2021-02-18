@@ -56,31 +56,33 @@ Search engine bot may cannot recognize your blog content.
 
 
 <div style="display:none;">
-  ### User Write Blog Flow (mermaid)
 
-  ```mermaid
-  graph TD;
-    user[your idea etc.]--write-->md[markdown file];
-  ```
+### User Write Blog Flow (mermaid)
 
-  ### Ggenerator Flow (Cli Automaton)
+```mermaid
+graph TD;
+  user[your idea etc.]--write-->md[markdown file];
+```
 
-  ```mermaid
-  graph TD;
-    md[markdown file] & config[yaml file]-->json[json file: for pagination];
-  ```
+### Ggenerator Flow (Cli Automaton)
 
-  ### Browser Access Flow
+```mermaid
+graph TD;
+  md[markdown file] & config[yaml file]-->json[json file: for pagination];
+```
 
-  #### pagination
-  ```mermaid
-  graph TD;
-    temp(template html) & json[json file]-->html;
-  ```
+### Browser Access Flow
 
-  #### post
-  ```mermaid
-  graph TD;
-    temp(template html) & md[markdown file]-->html;
-  ```
+#### pagination
+```mermaid
+graph TD;
+  temp(template html) & json[json file]-->html;
+```
+
+#### post
+```mermaid
+graph TD;
+  temp(template html) & md[markdown file]-->html;
+```
+  
 </div>
