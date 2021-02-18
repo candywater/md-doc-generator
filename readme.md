@@ -38,33 +38,49 @@ Search engine bot may cannot recognize your blog content.
 
 ### User Write Blog Flow
 
-```mermaid
-graph TD;
-  user[your idea etc.]--write-->md[markdown file];
-```
 [![](https://mermaid.ink/img/eyJjb2RlIjoiXG5ncmFwaCBURDtcbiAgdXNlclt5b3VyIGlkZWEgZXRjLl0tLXdyaXRlLS0-bWRbbWFya2Rvd24gZmlsZV07XG4iLCJtZXJtYWlkIjp7fSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiXG5ncmFwaCBURDtcbiAgdXNlclt5b3VyIGlkZWEgZXRjLl0tLXdyaXRlLS0-bWRbbWFya2Rvd24gZmlsZV07XG4iLCJtZXJtYWlkIjp7fSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
 
 ### Ggenerator Flow (Cli Automaton)
 
-```mermaid
-graph TD;
-  md[markdown file] & config[yaml file]-->json[json file: for pagination];
-```
 [![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEQ7XG4gIG1kW21hcmtkb3duIGZpbGVdICYgY29uZmlnW3lhbWwgZmlsZV0tLT5qc29uW2pzb24gZmlsZTogZm9yIHBhZ2luYXRpb25dOyIsIm1lcm1haWQiOnt9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVEQ7XG4gIG1kW21hcmtkb3duIGZpbGVdICYgY29uZmlnW3lhbWwgZmlsZV0tLT5qc29uW2pzb24gZmlsZTogZm9yIHBhZ2luYXRpb25dOyIsIm1lcm1haWQiOnt9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
 
 ### Browser Access Flow
 
 #### pagination
-```mermaid
-graph TD;
-  temp(template html) & json[json file]-->html;
-```
+
 [![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEQ7XG4gIHRlbXAodGVtcGxhdGUgaHRtbCkgJiBqc29uW2pzb24gZmlsZV0tLT5odG1sOyIsIm1lcm1haWQiOnt9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVEQ7XG4gIHRlbXAodGVtcGxhdGUgaHRtbCkgJiBqc29uW2pzb24gZmlsZV0tLT5odG1sOyIsIm1lcm1haWQiOnt9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
 
 #### post
-```mermaid
-graph TD;
-  temp(template html) & md[markdown file]-->html;
-```
+
 [![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEQ7XG4gIHRlbXAodGVtcGxhdGUgaHRtbCkgJiBtZFttYXJrZG93biBmaWxlXS0tPmh0bWw7IiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVEQ7XG4gIHRlbXAodGVtcGxhdGUgaHRtbCkgJiBtZFttYXJrZG93biBmaWxlXS0tPmh0bWw7IiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
+
+<div style="display:none;">
+  ### User Write Blog Flow (mermaid)
+
+  ```mermaid
+  graph TD;
+    user[your idea etc.]--write-->md[markdown file];
+  ```
+
+  ### Ggenerator Flow (Cli Automaton)
+
+  ```mermaid
+  graph TD;
+    md[markdown file] & config[yaml file]-->json[json file: for pagination];
+  ```
+
+  ### Browser Access Flow
+
+  #### pagination
+  ```mermaid
+  graph TD;
+    temp(template html) & json[json file]-->html;
+  ```
+
+  #### post
+  ```mermaid
+  graph TD;
+    temp(template html) & md[markdown file]-->html;
+  ```
+</div>
